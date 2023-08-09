@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Dropdowns Example</title>
+    <link rel="stylesheet" href="population.css">
+</head>
+<body>
+    
+    <div class="dropdown-container">
+        <label class="dropdown-label" for="countryDropdown">Country:</label>
+        <select class="dropdown" id="countryDropdown"></select>
+
+        <label class="dropdown-label" for="cityDropdown">City:</label>
+        <select class="dropdown" id="cityDropdown"></select>
+
+        <label class="dropdown-label" for="populationDropdown">Population:</label>
+        <select class="dropdown" id="populationDropdown">
+            <option> All </option>
+            <option> Old </option>
+            <option> young </option>
+            <option> child </option>
+        </select>
+    </div>
+
+    <div id="centered_container">
+        <table id="myTable">
+            <tr>
+                <th>Population Type</th>
+                <th>Number</th>
+            </tr>
+            <tr>
+                <td >Old</td>
+                <td id="cell12"> </td>
+            </tr>
+            <tr>
+                <td >Young</td>
+                <td id="cell22"> </td>
+            </tr>
+            <tr>
+                <td >Child</td>
+                <td id="cell32"> </td>
+            </tr>
+        </table>
+    </div>
+    
+    <script>
+        // Your JavaScript code here
+    </script>
+</body>
+</html>
+    <script src="population.js"> </script>
+    <script src="search.js"> </script>
+</body>
+</html>

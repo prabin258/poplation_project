@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Population Data Form</title>
+</head>
+<body>
+    <h1>Population Data Form</h1>
+    
+    <form action="http://localhost/population_information/population_data.php" method="post">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country_name" required><br><br>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city_name" required><br><br>
+        
+        <label for="old">Old Population:</label>
+        <input type="number" id="old" name="old" required><br><br>
+        
+        <label for="young">Young Population:</label>
+        <input type="number" id="young" name="young" required><br><br>
+        
+        <label for="child">Child Population:</label>
+        <input type="number" id="child" name="child" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

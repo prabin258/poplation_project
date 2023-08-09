@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags and title -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login and Sign Up</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="population.css">
+</head>
+<body>
+    <!-- Login section -->
+    <div id="loginpage">
+        <div  style="right: 300px; position: fixed;top: 110px; ">
+         <h3> Please log in </h3>
+         <!-- Form for admin login -->
+         <form id="loginform" >
+            <ul>
+            <!-- Input fields for admin login -->
+            <input type="text" name="username" placeholder="username"> 
+            <input type="password" name="password" placeholder="password">
+            </ul>
+            <!-- Button to perform admin login -->
+            <button type="button" onclick="login()"> log in </button> 
+         </form>
+        <!-- Notification for invalid login info -->
+        <h1 id="notification"> Invalid login info</h1> 
+    </div>
+
+    <div id="afterlogin">
+        <ul>
+            <a href="population_data_adder.html">
+            <!-- Button to add population -->
+            <button type="button" > Add population</button>
+        </a>
+            <form action="http://localhost/test/login_processor.php" method="post">
+            <!-- Button to search population -->
+            <button type="submit"  > Search for population data</button>
+           </form>
+        </ul> 
+
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="population.js"> </script>
+</body>
+</html>
